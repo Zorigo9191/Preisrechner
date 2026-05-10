@@ -1,0 +1,28 @@
+.reset-btn,
+.pay-button,
+.delivery-btn {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: rgb(216, 97, 97);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.pay-button {
+  background-color: rgb(49, 190, 96);
+}
+
+.delivery-btn {
+  background-color: orange;
+}
+
+.reset-btn:hover,
+.pay-button:hover,
+.delivery-btn:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.03);
+  background-color: #ddd;
+}

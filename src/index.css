@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #161616;
+  color: #a3a1a1;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+}

@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #3498db;
+  --border-radius: 6px;
+  --btn-hover-1: blue;
+  --font-color: #181717;
+  --box-shadow-0: inset 6px 6px 12px #5d5f61;
+  --box-shadow-1: inset -6px -6px 12px #555557;
+  --box-shadow-2: 20px 20px 60px #0f2641;
+  --box-shadow-3: -20px -20px 60px #09083a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  gap: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  align-items: start;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 20px;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  height: 80vh;
+  border: 1px solid white;
+  box-shadow: var(--box-shadow-0, --box-shadow-1);
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 400px;
+}
+
+.sidebar-title {
+  color: var(--primary-color);
+  margin-top: 0;
+  border-bottom: 2px solid #1283e0;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  scrollbar-width: none;
+  overflow: auto;
+  width: 100%;
+}
+
+.sidebar-items::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-item {
+  font-size: 1.6rem;
+  list-style: square;
+  color: white;
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+.actions-payAndDelivery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.render {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  font-size: 1.8rem;
+}
+
+.display-list {
+  border: 1px solid white;
+}
